@@ -19,13 +19,14 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "mopa/bootstrap-bundle": "dev-v2.3.x",
-        "twbs/bootstrap": "v2.3.2"
+        "mopa/bootstrap-bundle": "3.*@dev",
+        "twbs/bootstrap": "v3.0.0"
     },
     "require-dev": {
         "knplabs/knp-menu-bundle": "dev-master",
         "liip/theme-bundle": "dev-master",
-        "mopa/bootstrap-sandbox-bundle": "2.x-dev"
+        "mopa/bootstrap-sandbox-bundle": "3.0.*@dev",
+		"satooshi/php-coveralls": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -48,6 +49,8 @@
     "config": {
         "bin-dir": "bin"
     },
+	"preferred-install": "dist",
+	"prefer-stable": true,
     "minimum-stability": "dev",
     "extra": {
         "branch-alias":         {
