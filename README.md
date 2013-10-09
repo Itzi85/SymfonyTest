@@ -1,3 +1,44 @@
+Alotofus Symfony Test
+========================
+
+[![Continuous Integration status](https://secure.travis-ci.org/chebetos/SymfonyTest.png)](http://travis-ci.org/chebetos/SymfonyTest)
+ [![Coverage Status](https://coveralls.io/repos/chebetos/SymfonyTest/badge.png?branch=master)](https://coveralls.io/r/chebetos/SymfonyTest)
+ 
+ 
+Prueba Práctica
+
+Buenos días,
+
+A continuación te presentamos las instrucciones definitivas de la prueba práctica a realizar.
+
+1.- Debes hacer un fork o clon del repositorio, en GitHub o Bitbucket el cual debes compartir conmigo (chebetos@gmail.com) para poder examinarlo. O podeís iniciar vuestro proyecto de Symfony 2.3 propio pero cumpliendo con el resto de los requisitos.
+2.- Debeís actualizar el README.md para que el badge de travis y el de coveralls apunte a vuestro repositorio.
+3.- La funcionalidad a desarrollar es una calculadora aritmética simple. Con las siguientes características:
+    3.1.- Un formulario basado en html 5 y usando los componentes de twitter bootstrap.
+    3.2.- El formulario tendrá tres campos: Operador 1, Operación, Operador 2, Botón calcular. Las operaciones son Sumar, Restar, Multiplicar, Dividir
+    3.3.- Al presionar el botón calcular se envían los datos al servidor y se muestra el resultado en el campo Operador 1.
+    3.4.- Las operaciones se deben guardar en una base de datos con los siguientes campos: Fecha-Hora Operación, Operador 1, Operador 2, Operación, Resultado. Usa Doctrine para hacer la persistencia.
+
+4.- Los cálculos deben efectuarse en una clase independendiente que debe ser obtenida por el controlador como un servicio Symfony. Esta clase independiente debe tener 100% de cobertura con test unitarios.
+
+A las 15:00 se examinará vuestro repositorio para ver los resultados. 
+
+Definición de Hecho:
+====================
+* Funcionalidad cubierta por Test Unitario o Test Funcional basados en phpunit (puedes usar otra herramienta si gustas, pero debes dejar instrucciones de uso).
+* Subido a repositorio.
+* Que pase por el proceso de Integración Contínua (Travis-CI)
+
+Sugerencias:
+* Haz TDD o mejor aún BDD. 
+* Haz commit frecuentemente pero no rompas el build. En otras palabras a cada funcionalidad cubierta y que el test funcione haz commit. Por tanto pueden haber varios commits en un día.
+* En cada commmit solo incluye una funcionalidad o mejora. De forma que si hay que revertirlo, no tener que revertir cosas que si funcionan con las que no.
+* Haz push al repositorio remoto 1 o 2 veces al día. 
+
+Este proyecto está basado en https://packagist.org/packages/mopa/symfony-framework-bootstrap-edition
+
+Como se mencionó anteriormente, si desaís en lugar de un fork, podeis iniciar otro proyecto propio pero que cumpla con los requisitos antes mencionados.
+
 Symfony-Bootstrap Edition
 =========================
 
